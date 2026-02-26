@@ -16,7 +16,9 @@ def hello_by_path(name:str):
 @app.get("/hi/{name}")
 def hello_by_path(name:str = 'World'):
     return {"message": f"Hi {name}"}
-
+@app.post("/hello/{name}")
+def hello_by_path(name:str = 'World'):
+    return {"message": f"Hello {name}"}
 
 
 
